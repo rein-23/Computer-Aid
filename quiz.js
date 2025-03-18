@@ -422,7 +422,7 @@ function showQuestion() {
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
     
-    info.style.display = "none"; // Hide info at the start of each question
+    info.style.display = "none";
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -441,7 +441,7 @@ function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
-    info.innerHTML = ""; // Clear previous info
+    info.innerHTML = "";
 }
 
 function selectAnswer(e) {
