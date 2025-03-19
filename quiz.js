@@ -152,9 +152,9 @@ const questions = [
     {
         question: "If [OH⁻] is 1 × 10⁻⁹ M, what is the pH?",
         answers: [ 
-            { text: "5", correct: false},
+            { text: "5", correct: true},
             { text: "9", correct: false},
-            { text: "12", correct: true},
+            { text: "12", correct: false},
             { text: "7", correct: false},
         ],
         info: "Since pH + pOH = 14, first calculate pOH = -log(1 × 10⁻⁹) = 9. Then, pH = 14 - 9 = 5, indicating a slightly acidic solution.",
